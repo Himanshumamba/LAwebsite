@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOSANGELES MOUNTAINS</title>
+    <link rel="stylesheet"   href="style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <!--Hero Banner-->
+    <div class="Wrapper">
+    <div class="container">
+
+        <header>
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo"> 
+            </div>
+            <nav>
+                <a href="#history" class="slanted-text">01. History</a>
+                <a href="#team" class="slanted-text">02. Team</a>
+            </nav>
+        </header>
+    </div>
+    </div>
+    <!--Sticky Header-->
+  <div class="container">
+    <div class="sticky-header">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo">
+            <span class="logo_detail">LOSANGELES <span class="mount">MOUNTAINS</span></span>
+        </div>
+        <nav>
+            <a href="#history" class="slanted-text">01. History</a>
+            <a href="#team" class="slanted-text">02. Team</a>
+        </nav>
+    </div>
+</div>
+        <!--Number List-->
+
+    <div class="second-section"  >
+        <div class="container_second" >
+            <span class="numberlist" id="history">01.</span> 
+            
+            <h2 class="history_climb" > HISTORY</h2>
+        </div>
+        <div class="container content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue.  </p>
+    
+        </div>
+        <div class="conatiner-fluid strip"  >
+            <div class="container carousel_strip">
+                <div class="carousel-container">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="assets/image_1.png" alt="Image 1"></div>
+                            <div class="swiper-slide"><img src="assets/image_2.png" alt="Image 2"></div>
+                            <div class="swiper-slide"><img src="assets/image_1.png" alt="Image 3"></div>
+                            <div class="swiper-slide"><img src="assets/image_2.png" alt="Image 4"></div>
+                            <div class="swiper-slide"><img src="assets/image_4.png" alt="Image 5"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+               
+            </div>
+        </div>
+        
+      
+    </div>
+
+
+    <div class="third-section"  >
+        <div class="container_third">
+            <span class="numberlist">02.</span> 
+            <h2 class="history_climb" id="team"> CLIMB</h2>
+            <p>Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </p>
+        </div>
+       
+      
+    </div>
+
+    <!--Flip Accordian-->
+<div class="conatiner-fluid">
+    <div class="tab-buttons">
+        <div class="container accord_space">
+        <button onclick="toggleTab('mountain1')"  id="tab-mountain1">Mountain 1</button>
+        <button onclick="toggleTab('mountain2')"id="tab-mountain2" >Mountain 2</button>
+        </div>
+    </div>
+    
+    <div class="accordion-container" id="mountain1-container">
+        <div class="accordion">
+
+            <img src="./assets/tab_content.jpg"  id="tab_img" alt="Mountain 1 Image" onclick="toggleAccordion(this)">
+            <div class="container accord_space">
+            <div class="content-box">
+                <h2>SCHEDULE</h2>
+                <ul>
+                <li>
+                    <p>25 Nov 2016</p>
+                    <p>Vestibulum viverra</p>
+                </li>
+                <li>
+                    <p>28 Nov 2016</p>
+                    <p>Vestibulum viverra</p>
+                </li>
+                <li>
+                    <p>18 Dec 2016</p>
+                    <p>Vestibulum viverra</p>
+                </li>
+                <li>
+                    <p>7 Jan 2017</p>
+                    <p>Vestibulum viverra</p>
+                </li>
+               </ul>
+  
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="accordion-container" id="mountain2-container" style="display: none;">
+        <div class="accordion">
+
+            <img src="./assets/tab_content.jpg"  id="tab_img" alt="Mountain 1 Image" onclick="toggleAccordion(this)">
+            <div class="container accord_space">
+            <div class="content-box">
+                <h2>SCHEDULE</h2>
+                <ul>
+                    <li>
+                        <p>17 Nov 2016</p>
+                        <p>Vestibulum viverra</p>
+                    </li>
+                    <li>
+                        <p>13 Dec 2016</p>
+                        <p>Vestibulum viverra</p>
+                    </li>
+                </ul>
+                
+                </div>
+                 </div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+<!--Footer-->
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo">
+                <span class="logo_detail">LOSANGELES <span class="mount">MOUNTAINS</span></span>
+            </div>
+            <div class="copyright">
+                &copy; COPYRIGHT 2016. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./script/script.js"></script>
+
+</body>
+</html>
